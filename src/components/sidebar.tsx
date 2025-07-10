@@ -10,6 +10,7 @@ import {
   FileText,
   Package,
   LogOut,
+  MessageSquareMore,
 } from "lucide-react";
 import { useState } from "react";
 import LogoutModal from "./shared/modals/LogoutModal";
@@ -88,6 +89,15 @@ export function Sidebar() {
         >
           <Package className="h-5 w-5" />
           <span className="ml-3">Packages</span>
+        </Link>
+        <Link
+          href="/admin/dashboard/reviews"
+          className={`flex items-center gap-1 sidebar-link ${
+            isActive("/admin/dashboard/reviews") ? "active" : ""
+          }`}
+        >
+          <MessageSquareMore  className="h-5 w-5" />
+          <span className="ml-3">Reviews</span>
         </Link>
       </nav>
 
