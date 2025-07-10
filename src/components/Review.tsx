@@ -1,46 +1,33 @@
 "use client";
 
-import { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useQuery } from "@tanstack/react-query";
 import { Skeleton } from "./ui/skeleton";
-
-interface GoogleReview {
-  author_name: string;
-  author_url: string;
-  language: string;
-  original_language: string;
-  profile_photo_url: string;
-  rating: number;
-  relative_time_description: string;
-  text: string;
-  time: number;
-  translated: boolean;
-}
+import { ReviewsResponse } from "./types/reviewDataType";
+import { useSession } from "next-auth/react";
 
 export default function Review() {
   const [activeIndex, setActiveIndex] = useState(0);
   // const [isMobile, setIsMobile] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
+    const session = useSession();
+    const token = (session?.data?.user as { token?: string })?.token;
 
-  const { data, isLoading } = useQuery({
-    queryKey: ["reviews"],
-    queryFn: async () => {
-      const res = await fetch(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/google-reviews`
-      );
-      if (!res.ok) throw new Error("Failed to fetch reviews");
-      return res.json();
-    },
-  });
+   const { data, isLoading} = useQuery<ReviewsResponse>({
+      queryKey: ["all-review-data"],
+      queryFn: () =>
+        fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/user-reviews`, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }).then((res) => res.json()),
+    });
 
-  // const reviews: GoogleReview[] = data?.result?.reviews || [];
-  const reviews = useMemo<GoogleReview[]>(() => {
-    return data?.result?.reviews || [];
-  }, [data]);
+    const reviews = data?.data?.data || [];
 
   useEffect(() => {
     const checkIfMobile = () => {
