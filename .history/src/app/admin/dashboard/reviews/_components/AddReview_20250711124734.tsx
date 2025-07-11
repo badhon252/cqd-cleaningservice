@@ -200,20 +200,25 @@ const AddReview = ({
                   <FormField
                     control={form.control}
                     name="text"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-base font-bold text-[#0F2A5C]">
-                          Review Content
-                        </FormLabel>
-                        <FormControl>
-                          <Textarea
-                            placeholder="Enter a review content"
-                            {...field}
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+                    render={({ field }) => {
+                    
+                      return (
+                        <FormItem>
+                          <FormLabel className="text-base font-bold text-[#0F2A5C]">
+                            Review Content
+                          </FormLabel>
+                          <FormControl>
+                            <div>
+                              <Textarea
+                                placeholder="Enter a review content"
+                                {...field}
+                              />
+                            </div>
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      );
+                    }}
                   />
                 </div>
 

@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -19,9 +19,9 @@ import { useSession } from "next-auth/react";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import Image from "next/image";
-import { X } from "lucide-react";
+import { X } from "lucide-react"; 
 
-const MAX_FILE_SIZE = 20 * 1024 * 1024;
+const MAX_FILE_SIZE = 20 * 1024 * 1024; 
 const ACCEPTED_IMAGE_TYPES = [
   "image/jpeg",
   "image/jpg",
@@ -33,8 +33,8 @@ const formSchema = z.object({
   author_name: z.string().min(2, {
     message: "Author Name must be at least 2 characters.",
   }),
-  text: z.string().min(1, {
-    message: "Review text is required",
+  text: z.string().refine((val) => val.trim().split(/\s+/).length <= 25, {
+    message: "Review text must not exceed 25 words",
   }),
   rating: z
     .number({
@@ -173,9 +173,7 @@ const AddReview = ({
                       name="rating"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-base font-bold text-[#0F2A5C]">
-                            Rating (1 to 5)
-                          </FormLabel>
+                          <FormLabel className="text-base font-bold text-[#0F2A5C]">Rating (1 to 5)</FormLabel>
                           <FormControl>
                             <Input
                               type="number"
@@ -200,20 +198,37 @@ const AddReview = ({
                   <FormField
                     control={form.control}
                     name="text"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-base font-bold text-[#0F2A5C]">
-                          Review Content
-                        </FormLabel>
-                        <FormControl>
-                          <Textarea
-                            placeholder="Enter a review content"
-                            {...field}
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+                    render={({ field }) => {
+                      const wordCount =
+                        field.value?.trim().split(/\s+/).length || 0;
+                      return (
+                        <FormItem>
+                          <FormLabel className="text-base font-bold text-[#0F2A5C]">
+                            Review Content
+                          </FormLabel>
+                          <FormControl>
+                            <div>
+                              <Textarea
+                                placeholder="Enter a review content"
+                                {...field}
+                                onChange={(e) => {
+                                  const words = e.target.value
+                                    .trim()
+                                    .split(/\s+/);
+                                  if (words.length <= 25) {
+                                    field.onChange(e);
+                                  }
+                                }}
+                              />
+                              <p className="text-sm text-gray-500 mt-1">
+                                {wordCount}/25 words
+                              </p>
+                            </div>
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      );
+                    }}
                   />
                 </div>
 

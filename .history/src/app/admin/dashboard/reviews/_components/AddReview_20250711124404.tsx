@@ -33,8 +33,8 @@ const formSchema = z.object({
   author_name: z.string().min(2, {
     message: "Author Name must be at least 2 characters.",
   }),
-  text: z.string().min(1, {
-    message: "Review text is required",
+  text: z.string().refine((val) => val.trim().split(/\s+/).length <= 25, {
+    message: "Review text must not exceed 25 words",
   }),
   rating: z
     .number({
@@ -200,20 +200,26 @@ const AddReview = ({
                   <FormField
                     control={form.control}
                     name="text"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-base font-bold text-[#0F2A5C]">
-                          Review Content
-                        </FormLabel>
-                        <FormControl>
-                          <Textarea
-                            placeholder="Enter a review content"
-                            {...field}
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+                    render={({ field }) => {
+                      return (
+                        <FormItem>
+                          <FormLabel className="text-base font-bold text-[#0F2A5C]">
+                            Review Content
+                          </FormLabel>
+                          <FormControl>
+                            <div>
+                              <Textarea
+                                placeholder="Enter a review content"
+                                {...field}
+                                
+                                onChange={(e) => field.onChange(e.target.value)}
+                              />
+                            </div>
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      );
+                    }}
                   />
                 </div>
 

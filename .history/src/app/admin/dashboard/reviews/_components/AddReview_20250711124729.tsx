@@ -200,20 +200,26 @@ const AddReview = ({
                   <FormField
                     control={form.control}
                     name="text"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-base font-bold text-[#0F2A5C]">
-                          Review Content
-                        </FormLabel>
-                        <FormControl>
-                          <Textarea
-                            placeholder="Enter a review content"
-                            {...field}
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+                    render={({ field }) => {
+                      const wordCount =
+                        field.value?.trim().split(/\s+/).length || 0;
+                      return (
+                        <FormItem>
+                          <FormLabel className="text-base font-bold text-[#0F2A5C]">
+                            Review Content
+                          </FormLabel>
+                          <FormControl>
+                            <div>
+                              <Textarea
+                                placeholder="Enter a review content"
+                                {...field}
+                              />
+                            </div>
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      );
+                    }}
                   />
                 </div>
 

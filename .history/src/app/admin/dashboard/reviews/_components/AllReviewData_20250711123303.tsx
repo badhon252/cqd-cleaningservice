@@ -22,6 +22,7 @@ const AllReviewData = () => {
   const [selectedReviewId, setSelectedReviewId] = useState<string | null>(null);
   const queryClient = useQueryClient();
 
+  
   const { data, isLoading, isError, error } = useQuery<ReviewsResponse>({
     queryKey: ["all-review-data"],
     queryFn: () =>
@@ -89,11 +90,21 @@ const AllReviewData = () => {
         <table className="w-full">
           <thead>
             <tr className="border border-gray-300 bg-[#0F2A5C] text-white">
-              <th className="border-r border-gray-300 py-2">SL</th>
-              <th className="border-r border-gray-300 py-2">Image</th>
-              <th className="border-r border-gray-300 py-2">Name</th>
-              <th className="border-r border-gray-300 py-2">Rating</th>
-              <th className="border-r border-gray-300 py-2">Review Message</th>
+              <th className="border-r border-gray-300 py-2">
+                SL
+              </th>
+              <th className="border-r border-gray-300 py-2">
+                Image
+              </th>
+              <th className="border-r border-gray-300 py-2">
+                Name
+              </th>
+              <th className="border-r border-gray-300 py-2">
+                Rating
+              </th>
+              <th className="border-r border-gray-300 py-2">
+                Review Message
+              </th>
               <th className="">Actions</th>
             </tr>
           </thead>

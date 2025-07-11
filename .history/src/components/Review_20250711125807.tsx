@@ -123,7 +123,7 @@ export default function Review() {
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
-            <CardContent className="p-6 md:p-8 flex flex-col md:flex-row items-center md:!px-10">
+            <CardContent className="p-6 md:p-8 flex flex-col md:flex-row items-center ">
               <div className="md:w-1/3 flex justify-center  mb-6 md:mb-0">
                 <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden">
                   <Image

@@ -14,20 +14,20 @@ export default function Review() {
   const [activeIndex, setActiveIndex] = useState(0);
   // const [isMobile, setIsMobile] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
-  const session = useSession();
-  const token = (session?.data?.user as { token?: string })?.token;
+    const session = useSession();
+    const token = (session?.data?.user as { token?: string })?.token;
 
-  const { data, isLoading } = useQuery<ReviewsResponse>({
-    queryKey: ["all-review-data"],
-    queryFn: () =>
-      fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/user-reviews`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      }).then((res) => res.json()),
-  });
+   const { data, isLoading} = useQuery<ReviewsResponse>({
+      queryKey: ["all-review-data"],
+      queryFn: () =>
+        fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/user-reviews`, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }).then((res) => res.json()),
+    });
 
-  const reviews = data?.data?.data || [];
+    const reviews = data?.data?.data || [];
 
   useEffect(() => {
     const checkIfMobile = () => {
@@ -123,9 +123,9 @@ export default function Review() {
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
-            <CardContent className="p-6 md:p-8 flex flex-col md:flex-row items-center md:!px-10">
-              <div className="md:w-1/3 flex justify-center  mb-6 md:mb-0">
-                <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden">
+            <CardContent className="p-6 md:p-8 flex flex-col md:flex-row items-center">
+              <div className="md:w-1/3 flex justify-center mb-6 md:mb-0">
+                <div className="relative w-20 h-20 md:w-22 md:h-40 rounded-full overflow-hidden">
                   <Image
                     src={activeReview?.profile_photo_url || "/placeholder.svg"}
                     alt={activeReview?.author_name}
