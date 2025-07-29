@@ -1,7 +1,7 @@
 import ContactSection from "@/components/Contact";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
     <div>
       <ContactSection />
@@ -9,4 +9,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

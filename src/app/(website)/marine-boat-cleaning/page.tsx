@@ -11,7 +11,7 @@ export const metadata = {
     "Trust CQD Cleaning for professional marine & boat cleaning. We remove grime, algae & salt buildup to keep your vessel spotless and shining.",
 };
 
-const page = () => {
+const Page = () => {
   return (
     <div className="w-full mx-auto">
       <HeroImage
@@ -28,4 +28,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

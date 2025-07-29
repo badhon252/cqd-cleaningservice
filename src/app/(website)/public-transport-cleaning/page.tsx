@@ -11,7 +11,7 @@ export const metadata = {
     "CQD Cleaning provides top-tier public transport cleaning services, maintaining hygiene, safety, and comfort across all transit environments.",
 };
 
-const page = () => {
+const Page = () => {
   return (
     <div className="w-full mx-auto">
       <HeroImage
@@ -29,4 +29,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

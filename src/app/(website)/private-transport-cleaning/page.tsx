@@ -12,7 +12,7 @@ export const metadata = {
     "CQD Cleaning offers professional private transport cleaning for cars, vans, and more. Keep your ride fresh and sanitized. Call us now!",
 };
 
-const page = () => {
+const Page = () => {
   return (
     <div className="w-full mx-auto">
       <HeroImage
@@ -29,4 +29,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
