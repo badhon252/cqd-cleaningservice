@@ -6,19 +6,19 @@ import WwwOfficeCleaning from "@/components/WwwOfficeCleaning";
 import React from "react";
 
 export const metadata = {
-  title: "Expert Office Cleaning Services by CQD Professionals",
+  title: "Specialized Mosque Cleaning Services by CQD Professionals",
   description:
-    "CQD delivers top-tier office cleaning solutions using eco-friendly products and meticulous techniques to maintain a clean, healthy, and productive workplace.",
+    "CQD offers respectful and thorough mosque cleaning using safe, eco-friendly products to ensure a clean, serene, and spiritually uplifting environment for worshippers.",
 };
 
 const Page = () => {
   return (
     <div>
       <HeroImage
-        title="Professional Office Cleaning"
-        description="Ensure a spotless, healthy office environment with our expert cleaning services tailored for businesses of all sizes."
-        backgroundImage="/services/office-cleaning1.jpg"
-        imageAlt="Office Cleaning Services"
+        title="Professional Mosque Cleaning"
+        description="Ensure a clean, peaceful, and respectful worship environment with our specialized mosque cleaning services for prayer areas, ablution spaces, and more."
+        backgroundImage="/services/mosqueCleaning1.jpg"
+        imageAlt="Mosque Cleaning Services"
       />
 
       <WwwOfficeCleaning />

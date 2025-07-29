@@ -2,26 +2,26 @@ import ContactSection from "@/components/Contact";
 import { HeroImage } from "@/components/HeroImage";
 import HighlightedLocations from "@/components/HighlightedLocations";
 import Review from "@/components/Review";
-import WwwOfficeCleaning from "@/components/WwwOfficeCleaning";
+import WwoChurchCleaning from "@/components/WwoChurchCleaning";
 import React from "react";
 
 export const metadata = {
-  title: "Expert Office Cleaning Services by CQD Professionals",
+  title: "Trusted Church Cleaning Services by CQD Experts",
   description:
-    "CQD delivers top-tier office cleaning solutions using eco-friendly products and meticulous techniques to maintain a clean, healthy, and productive workplace.",
+    "CQD provides respectful and thorough church cleaning using safe, eco-friendly products to maintain a pristine, welcoming, and sacred environment for your congregation.",
 };
 
 const Page = () => {
   return (
     <div>
       <HeroImage
-        title="Professional Office Cleaning"
-        description="Ensure a spotless, healthy office environment with our expert cleaning services tailored for businesses of all sizes."
-        backgroundImage="/services/office-cleaning1.jpg"
-        imageAlt="Office Cleaning Services"
+        title="Professional Church Cleaning"
+        description="Maintain a clean, respectful, and welcoming worship space with our expert church cleaning services designed for sanctuaries, halls, and common areas."
+        backgroundImage="/services/churchCleaning1.jpg"
+        imageAlt="Church Cleaning Services"
       />
 
-      <WwwOfficeCleaning />
+      <WwoChurchCleaning />
       <Review />
       <HighlightedLocations />
       <ContactSection />
