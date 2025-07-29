@@ -2,26 +2,26 @@ import ContactSection from "@/components/Contact";
 import { HeroImage } from "@/components/HeroImage";
 import HighlightedLocations from "@/components/HighlightedLocations";
 import Review from "@/components/Review";
-import WwwOfficeCleaning from "@/components/WwwOfficeCleaning";
+import WwoGPSurgeriesCleaning from "@/components/WwoGPSurgeriesCleaning";
 import React from "react";
 
 export const metadata = {
-  title: "Expert Office Cleaning Services by CQD Professionals",
+  title: "Expert GP Surgeries Cleaning Services by CQD Professionals",
   description:
-    "CQD delivers top-tier office cleaning solutions using eco-friendly products and meticulous techniques to maintain a clean, healthy, and productive workplace.",
+    "CQD provides specialized GP surgeries cleaning solutions using eco-friendly products and stringent hygiene protocols to ensure a safe, sterile, and welcoming healthcare environment.",
 };
 
 const Page = () => {
   return (
     <div>
       <HeroImage
-        title="Professional Office Cleaning"
-        description="Ensure a spotless, healthy office environment with our expert cleaning services tailored for businesses of all sizes."
-        backgroundImage="/services/office-cleaning1.jpg"
-        imageAlt="Office Cleaning Services"
+        title="Professional GP Surgeries Cleaning"
+        description="Maintain a clean, sterile, and safe environment with our expert GP surgeries cleaning services designed to meet healthcare standards."
+        backgroundImage="/services/gPSurgeries1.jpg"
+        imageAlt="GP Surgeries Cleaning Services"
       />
 
-      <WwwOfficeCleaning />
+      <WwoGPSurgeriesCleaning />
       <Review />
       <HighlightedLocations />
       <ContactSection />

@@ -13,8 +13,8 @@ const WwoDentalCleaning = () => {
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
               <div className="relative w-full aspect-[536/656] max-w-[536px] overflow-hidden">
                 <Image
-                  src="/services/DentalCleaning2.jpg"
-                  alt="Professional Dental Clinic Cleaning Services"
+                  src="/services/dataCenter2.jpg"
+                  alt="Professional Data Centre Cleaning Services"
                   fill
                   style={{ objectFit: "cover" }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 536px"
@@ -32,29 +32,34 @@ const WwoDentalCleaning = () => {
 
               <div className="space-y-4">
                 <p className="text-base md:text-lg text-gray-700">
-                  CQD Cleaning Services specializes in thorough dental clinic cleaning designed to maintain the highest standards of hygiene and infection control. Our trained team ensures your clinic remains sterile, safe, and welcoming for patients and staff.
+                  CQD Cleaning Services provides specialized cleaning solutions
+                  for data centres and server rooms, ensuring dust-free,
+                  static-safe environments that safeguard critical IT
+                  infrastructure and performance.
                 </p>
 
                 <p className="text-base md:text-lg text-gray-700">
-                  From treatment rooms and waiting areas to sterilization zones and restrooms, we use hospital-grade, eco-friendly cleaning products to prevent contamination and promote a healthy environment.
+                  We use anti-static, non-abrasive methods to clean raised
+                  floors, server cabinets, cable trays, and HVAC vents, helping
+                  you prevent downtime and prolong equipment life.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Pre- and post-treatment room sanitation
+                  Raised floor and subfloor dust removal
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Sterilization area and equipment cleaning
+                  Server racks & equipment surface cleaning
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Waiting room & reception area hygiene
+                  Anti-static vacuuming & cleaning techniques
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Use of medical-grade, eco-friendly disinfectants
+                  HVAC and vent sanitization
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Waste disposal compliant with healthcare regulations
+                  Cable tray & overhead surface dusting
                 </div>
               </div>
 
@@ -82,29 +87,34 @@ const WwoDentalCleaning = () => {
 
               <div className="space-y-4">
                 <p className="text-base md:text-lg text-gray-700">
-                  At CQD Cleaning Services, we understand the critical importance of cleanliness and infection control in dental healthcare settings. Our team is fully trained to meet healthcare standards and deliver meticulous cleaning tailored to your clinic’s needs.
+                  Our data centre cleaning services are performed by technicians
+                  trained in handling sensitive electronic environments. We
+                  prioritize safety, precision, and compliance with industry
+                  best practices.
                 </p>
 
                 <p className="text-base md:text-lg text-gray-700">
-                  We offer flexible scheduling, competitive pricing, and a satisfaction guarantee — helping your clinic maintain a pristine, safe environment for your patients and staff.
+                  CQD Cleaning Services is committed to keeping your data centre
+                  clean, safe, and running at optimal performance with minimal
+                  disruption to your operations.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Trusted by dental clinics and healthcare professionals
+                  Experienced in mission-critical environments
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Fully trained & certified cleaning specialists
+                  Anti-static & equipment-safe processes
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Tailored cleaning schedules to fit your clinic hours
+                  Scheduled cleanings without operational downtime
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Transparent pricing with no hidden fees
+                  Transparent quotes & detailed service logs
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  100% satisfaction guarantee on all services
+                  Trusted by IT firms and data providers
                 </div>
               </div>
 
@@ -121,8 +131,8 @@ const WwoDentalCleaning = () => {
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
               <div className="relative w-full aspect-[536/656] max-w-[536px] rounded-tr-[100px] rounded-bl-[100px] overflow-hidden">
                 <Image
-                  src="/services/DentalCleaning3.jpg"
-                  alt="Expert Dental Clinic Cleaning Professionals"
+                  src="/services/dataCenter3.jpg"
+                  alt="Data Centre Cleaning Experts at Work"
                   fill
                   style={{ objectFit: "cover" }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 536px"
