@@ -104,7 +104,7 @@ export default function TabletNavbar() {
                 </button>
                 {isServicesOpen && (
                   <div className="absolute top-full left-0 mt-2 w-56 xl:w-96 bg-white rounded-xl shadow-lg overflow-hidden z-50">
-                    <ScrollArea className="h-auto md:h-[700px] w-[450px] rounded-md border p-4">
+                    <ScrollArea className="h-auto md:h-[600px] w-[450px] rounded-md border p-4">
                       <div className=" py-2">
                         <Link
                           href="/window-cleaning"
@@ -476,56 +476,199 @@ export default function TabletNavbar() {
                     : "max-h-0 opacity-0 pointer-events-none overflow-hidden"
                 )}
               >
-                <Link
-                  href="/window-cleaning"
-                  className="block text-gray-900 hover:text-gray-600 py-2 text-base"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Window Cleaning
-                </Link>
-                <Link
-                  href="/carpet-cleaning"
-                  className="block text-gray-900 hover:text-gray-600 py-2 text-base"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Carpet Cleaning
-                </Link>
-                <Link
-                  href="/washroom-cleaning"
-                  className="block text-gray-900 hover:text-gray-600 py-2 text-base"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Washroom Cleaning
-                </Link>
+                <ScrollArea className="h-[250px] w-full rounded-md border p-4">
+                  <Link
+                    href="/window-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Window Cleaning
+                  </Link>
+                  <Link
+                    href="/carpet-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Carpet Cleaning
+                  </Link>
+                  <Link
+                    href="/washroom-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Washroom Cleaning
+                  </Link>
 
-                <Link
-                  href="/public-transport-cleaning"
-                  className="block text-gray-900 hover:text-gray-600 py-2 text-base"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Public Transport Cleaning
-                </Link>
-                <Link
-                  href="/private-transport-cleaning"
-                  className="block text-gray-900 hover:text-gray-600 py-2 text-base"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Private Transport Cleaning
-                </Link>
-                <Link
-                  href="/marine-boat-cleaning"
-                  className="block text-gray-900 hover:text-gray-600 py-2 text-base"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Marine & Boat Cleaning
-                </Link>
-                <Link
-                  href="/commercial-fleet-logistic-vehicles"
-                  className="block text-gray-900 hover:text-gray-600 py-2 text-base"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Commercial Fleet & Logistic Vehicles
-                </Link>
+                  <Link
+                    href="/public-transport-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Public Transport Cleaning
+                  </Link>
+                  <Link
+                    href="/private-transport-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Private Transport Cleaning
+                  </Link>
+                  <Link
+                    href="/marine-boat-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Marine & Boat Cleaning
+                  </Link>
+                  <Link
+                    href="/commercial-fleet-logistic-vehicles"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Commercial Fleet & Logistic Vehicles
+                  </Link>
+                  {/* ____________________________________________  */}
+                  <Link
+                    href="/office-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Office Cleaning
+                  </Link>
+                  <Link
+                    href="/commercial-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Commercial Cleaning
+                  </Link>
+                  <Link
+                    href="/church-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Church Cleaning
+                  </Link>
+                  <Link
+                    href="/mosque-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Mosque Cleaning
+                  </Link>
+                  <Link
+                    href="/event-space-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Event Space Cleaning
+                  </Link>
+                  <Link
+                    href="/dental-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Dental Cleaning
+                  </Link>
+                  <Link
+                    href="/school-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    School Cleaning
+                  </Link>
+                  <Link
+                    href="/nursery-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Nursery Cleaning
+                  </Link>
+                  <Link
+                    href="/gym-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Gym Cleaning
+                  </Link>
+                  <Link
+                    href="/data-centre-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Data Centre Cleaning
+                  </Link>
+                  <Link
+                    href="/retail"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Retail
+                  </Link>
+                  <Link
+                    href="/gp-surgeries-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    GP Surgeries Cleaning
+                  </Link>
+                  <Link
+                    href="/pubs-and-restaurants-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Pubs and Restaurants Cleaning
+                  </Link>
+                  <Link
+                    href="/soft-play-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Soft Play Cleaning
+                  </Link>
+                  <Link
+                    href="/cinema-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Cinema Cleaning
+                  </Link>
+                  <Link
+                    href="/clubs-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Clubs Cleaning
+                  </Link>
+                  <Link
+                    href="/accountancy-offices-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Accountancy Offices Cleaning
+                  </Link>
+                  <Link
+                    href="/showroom-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Showroom Cleaning
+                  </Link>
+                  <Link
+                    href="/theatres-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Theatres Cleaning
+                  </Link>
+                  <Link
+                    href="/workshop-space-cleaning"
+                    className="block text-gray-900 hover:text-gray-600 py-2 text-base"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Workshop Space Cleaning
+                  </Link>
+                </ScrollArea>
               </div>
             </div>
             <Link

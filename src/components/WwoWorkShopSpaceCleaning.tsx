@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import Image from "next/image";
 
-const WwoDentalCleaning = () => {
+const WwoWorkShopSpaceCleaning = () => {
   return (
     <div>
       {/* What We Offer Section */}
@@ -13,8 +13,8 @@ const WwoDentalCleaning = () => {
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
               <div className="relative w-full aspect-[536/656] max-w-[536px] overflow-hidden">
                 <Image
-                  src="/services/DentalCleaning2.jpg"
-                  alt="Professional Data Centre Cleaning Services"
+                  src="/services/workshopSpaceCleaning2.jpg"
+                  alt="Professional Workshop Space Cleaning Services"
                   fill
                   style={{ objectFit: "cover" }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 536px"
@@ -32,34 +32,33 @@ const WwoDentalCleaning = () => {
 
               <div className="space-y-4">
                 <p className="text-base md:text-lg text-gray-700">
-                  CQD Cleaning Services provides specialized cleaning solutions
-                  for data centres and server rooms, ensuring dust-free,
-                  static-safe environments that safeguard critical IT
-                  infrastructure and performance.
+                  CQD Cleaning Services specializes in workshop space cleaning,
+                  providing thorough removal of dust, debris, and grease to
+                  maintain a safe and efficient working environment.
                 </p>
 
                 <p className="text-base md:text-lg text-gray-700">
-                  We use anti-static, non-abrasive methods to clean raised
-                  floors, server cabinets, cable trays, and HVAC vents, helping
-                  you prevent downtime and prolong equipment life.
+                  Our team uses industrial-grade, non-abrasive cleaning methods
+                  tailored for machinery, workbenches, floors, and ventilation
+                  systems to minimize downtime and maximize productivity.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Raised floor and subfloor dust removal
+                  Heavy-duty floor and surface cleaning
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Server racks & equipment surface cleaning
+                  Machinery exterior degreasing and dust removal
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Anti-static vacuuming & cleaning techniques
+                  Safe ventilation and duct sanitization
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  HVAC and vent sanitization
+                  Workbench and tool area cleaning
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Cable tray & overhead surface dusting
+                  Waste and debris removal
                 </div>
               </div>
 
@@ -87,34 +86,33 @@ const WwoDentalCleaning = () => {
 
               <div className="space-y-4">
                 <p className="text-base md:text-lg text-gray-700">
-                  Our data centre cleaning services are performed by technicians
-                  trained in handling sensitive electronic environments. We
-                  prioritize safety, precision, and compliance with industry
-                  best practices.
+                  Our technicians are experienced in cleaning industrial
+                  workshop spaces, understanding the unique challenges of
+                  grease, dust, and debris in these environments.
                 </p>
 
                 <p className="text-base md:text-lg text-gray-700">
-                  CQD Cleaning Services is committed to keeping your data centre
-                  clean, safe, and running at optimal performance with minimal
-                  disruption to your operations.
+                  CQD Cleaning Services is dedicated to delivering reliable,
+                  safe, and efficient cleaning that keeps your workshop
+                  operational and compliant with health and safety standards.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Experienced in mission-critical environments
+                  Expertise in industrial cleaning protocols
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Anti-static & equipment-safe processes
+                  Use of eco-friendly, non-toxic cleaning agents
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Scheduled cleanings without operational downtime
+                  Flexible scheduling to minimize downtime
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Transparent quotes & detailed service logs
+                  Transparent pricing and detailed service reports
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Trusted by IT firms and data providers
+                  Trusted by manufacturing and craft industries
                 </div>
               </div>
 
@@ -131,8 +129,8 @@ const WwoDentalCleaning = () => {
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
               <div className="relative w-full aspect-[536/656] max-w-[536px] rounded-tr-[100px] rounded-bl-[100px] overflow-hidden">
                 <Image
-                  src="/services/DentalCleaning3.jpg"
-                  alt="Data Centre Cleaning Experts at Work"
+                  src="/services/workshopSpaceCleaning3.jpg"
+                  alt="Workshop Space Cleaning Experts at Work"
                   fill
                   style={{ objectFit: "cover" }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 536px"
@@ -148,4 +146,4 @@ const WwoDentalCleaning = () => {
   );
 };
 
-export default WwoDentalCleaning;
+export default WwoWorkShopSpaceCleaning;

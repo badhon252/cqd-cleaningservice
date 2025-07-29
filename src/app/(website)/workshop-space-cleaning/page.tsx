@@ -2,26 +2,26 @@ import ContactSection from "@/components/Contact";
 import { HeroImage } from "@/components/HeroImage";
 import HighlightedLocations from "@/components/HighlightedLocations";
 import Review from "@/components/Review";
-import WwwOfficeCleaning from "@/components/WwwOfficeCleaning";
+import WwoWorkShopSpaceCleaning from "@/components/WwoWorkShopSpaceCleaning";
 import React from "react";
 
 export const metadata = {
-  title: "Expert Office Cleaning Services by CQD Professionals",
+  title: "Expert Workshop Space Cleaning Services by CQD Professionals",
   description:
-    "CQD delivers top-tier office cleaning solutions using eco-friendly products and meticulous techniques to maintain a clean, healthy, and productive workplace.",
+    "CQD offers specialized workshop space cleaning using eco-friendly products and thorough techniques to maintain a safe, clean, and efficient working environment.",
 };
 
 const Page = () => {
   return (
     <div>
       <HeroImage
-        title="Professional Office Cleaning"
-        description="Ensure a spotless, healthy office environment with our expert cleaning services tailored for businesses of all sizes."
-        backgroundImage="/services/office-cleaning1.jpg"
-        imageAlt="Office Cleaning Services"
+        title="Professional Workshop Space Cleaning"
+        description="Maintain a safe and spotless workshop environment with our expert cleaning services tailored to industrial and craft spaces of all sizes."
+        backgroundImage="/services/workshopSpaceCleaning1.jpg"
+        imageAlt="Workshop Space Cleaning Services"
       />
 
-      <WwwOfficeCleaning />
+      <WwoWorkShopSpaceCleaning />
       <Review />
       <HighlightedLocations />
       <ContactSection />
