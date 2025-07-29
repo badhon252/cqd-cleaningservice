@@ -2,26 +2,26 @@ import ContactSection from "@/components/Contact";
 import { HeroImage } from "@/components/HeroImage";
 import HighlightedLocations from "@/components/HighlightedLocations";
 import Review from "@/components/Review";
-import WwwOfficeCleaning from "@/components/WwwOfficeCleaning";
+import WwoDentalCleaning from "@/components/WwoDentalCleaning";
 import React from "react";
 
 export const metadata = {
-  title: "Expert Office Cleaning Services by CQD Professionals",
+  title: "Professional Dental Clinic Cleaning Services by CQD Experts",
   description:
-    "CQD delivers top-tier office cleaning solutions using eco-friendly products and meticulous techniques to maintain a clean, healthy, and productive workplace.",
+    "CQD provides specialized dental clinic cleaning using hospital-grade, eco-friendly products to ensure a sterile, hygienic, and compliant environment for patients and staff.",
 };
 
 const Page = () => {
   return (
     <div>
       <HeroImage
-        title="Professional Office Cleaning"
-        description="Ensure a spotless, healthy office environment with our expert cleaning services tailored for businesses of all sizes."
-        backgroundImage="/services/office-cleaning1.jpg"
-        imageAlt="Office Cleaning Services"
+        title="Professional Dental Clinic Cleaning"
+        description="Maintain a sterile, safe, and hygienic dental environment with our expert cleaning services tailored for dental clinics and healthcare facilities."
+        backgroundImage="/services/DentalCleaning1.jpg"
+        imageAlt="Dental Clinic Cleaning Services"
       />
 
-      <WwwOfficeCleaning />
+      <WwoDentalCleaning />
       <Review />
       <HighlightedLocations />
       <ContactSection />
