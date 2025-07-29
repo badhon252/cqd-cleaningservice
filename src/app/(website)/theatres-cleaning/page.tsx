@@ -2,26 +2,26 @@ import ContactSection from "@/components/Contact";
 import { HeroImage } from "@/components/HeroImage";
 import HighlightedLocations from "@/components/HighlightedLocations";
 import Review from "@/components/Review";
-import WwwOfficeCleaning from "@/components/WwwOfficeCleaning";
+import WwoTheatreCleaning from "@/components/WwoTheatreCleaning";
 import React from "react";
 
 export const metadata = {
-  title: "Expert Office Cleaning Services by CQD Professionals",
+  title: "Professional Theatre Cleaning Services by CQD Experts",
   description:
-    "CQD delivers top-tier office cleaning solutions using eco-friendly products and meticulous techniques to maintain a clean, healthy, and productive workplace.",
+    "CQD offers specialized theatre cleaning solutions using eco-friendly products and meticulous methods to maintain a pristine, safe, and welcoming environment for audiences and performers alike.",
 };
 
 const Page = () => {
   return (
     <div>
       <HeroImage
-        title="Professional Office Cleaning"
-        description="Ensure a spotless, healthy office environment with our expert cleaning services tailored for businesses of all sizes."
-        backgroundImage="/services/office-cleaning1.jpg"
-        imageAlt="Office Cleaning Services"
+        title="Professional Theatre Cleaning"
+        description="Maintain a spotless and inviting theatre environment with our expert cleaning services designed specifically for theatres and auditoriums."
+        backgroundImage="/services/theatreCleaning1.jpg"
+        imageAlt="Theatre Cleaning Services"
       />
 
-      <WwwOfficeCleaning />
+      <WwoTheatreCleaning />
       <Review />
       <HighlightedLocations />
       <ContactSection />

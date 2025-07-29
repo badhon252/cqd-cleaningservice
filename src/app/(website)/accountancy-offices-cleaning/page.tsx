@@ -2,26 +2,26 @@ import ContactSection from "@/components/Contact";
 import { HeroImage } from "@/components/HeroImage";
 import HighlightedLocations from "@/components/HighlightedLocations";
 import Review from "@/components/Review";
-import WwwOfficeCleaning from "@/components/WwwOfficeCleaning";
+import WwoAccountancyOfficeCleaning from "@/components/WwoAccountancyOfficeCleaning";
 import React from "react";
 
 export const metadata = {
-  title: "Expert Office Cleaning Services by CQD Professionals",
+  title: "Expert Accountancy Office Cleaning Services by CQD Professionals",
   description:
-    "CQD delivers top-tier office cleaning solutions using eco-friendly products and meticulous techniques to maintain a clean, healthy, and productive workplace.",
+    "CQD offers premium cleaning services for accountancy offices, ensuring a spotless, professional environment that enhances productivity and impresses clients.",
 };
 
 const Page = () => {
   return (
     <div>
       <HeroImage
-        title="Professional Office Cleaning"
-        description="Ensure a spotless, healthy office environment with our expert cleaning services tailored for businesses of all sizes."
-        backgroundImage="/services/office-cleaning1.jpg"
-        imageAlt="Office Cleaning Services"
+        title="Professional Accountancy Office Cleaning"
+        description="Maintain a pristine, organized environment in your accountancy office with our specialized cleaning services designed for accuracy and professionalism."
+        backgroundImage="/services/accountancyOfficesCleaning1.jpg"
+        imageAlt="Accountancy Office Cleaning Services"
       />
 
-      <WwwOfficeCleaning />
+      <WwoAccountancyOfficeCleaning />
       <Review />
       <HighlightedLocations />
       <ContactSection />
