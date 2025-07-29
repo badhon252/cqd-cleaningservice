@@ -15,7 +15,7 @@ export const metadata = {
 
 
 
-const page = () => {
+const Page = () => {
   return (
     <div>
        <HeroImage
@@ -34,4 +34,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

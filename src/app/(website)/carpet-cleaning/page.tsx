@@ -11,7 +11,7 @@ export const metadata = {
     " CQD Cleaning Services offers expert carpet cleaning using eco-safe methods to remove stains, allergens, and odors for a fresh, healthy home.",
 };
 
-const page = () => {
+const Page = () => {
   return (
     <div className="w-full mx-auto">
       <HeroImage
@@ -28,4 +28,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
