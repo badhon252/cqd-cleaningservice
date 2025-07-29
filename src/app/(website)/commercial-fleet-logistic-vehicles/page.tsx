@@ -11,7 +11,7 @@ export const metadata = {
     "CQD provides expert cleaning for commercial fleets & logistic vehicles. Quick, efficient service for your business needs.",
 };
 
-const page = () => {
+const Page = () => {
   return (
     <div className="w-full mx-auto">
       <HeroImage
@@ -28,4 +28,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
