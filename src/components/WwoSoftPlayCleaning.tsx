@@ -13,7 +13,7 @@ const WwoSoftPlayCleaning = () => {
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
               <div className="relative w-full aspect-[536/656] max-w-[536px] overflow-hidden">
                 <Image
-                  src="/services/soft PlayCleaning2.jpg"
+                  src="/services/softPlayCleaing2.jpg"
                   alt="Professional Soft Play Cleaning Services"
                   fill
                   style={{ objectFit: "cover" }}
@@ -121,7 +121,7 @@ const WwoSoftPlayCleaning = () => {
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
               <div className="relative w-full aspect-[536/656] max-w-[536px] rounded-tr-[100px] rounded-bl-[100px] overflow-hidden">
                 <Image
-                  src="/services/soft PlayCleaning3.jpg"
+                  src="/services/softPlayCleaing3.jpg"
                   alt="Soft Play Cleaning Experts at Work"
                   fill
                   style={{ objectFit: "cover" }}

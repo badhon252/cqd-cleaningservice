@@ -13,7 +13,7 @@ const WwoWorkShopSpaceCleaning = () => {
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
               <div className="relative w-full aspect-[536/656] max-w-[536px] overflow-hidden">
                 <Image
-                  src="/services/workshopSpaceCleaning2.jpg"
+                  src="/services/workShopCleaning2.jpg"
                   alt="Professional Workshop Space Cleaning Services"
                   fill
                   style={{ objectFit: "cover" }}
