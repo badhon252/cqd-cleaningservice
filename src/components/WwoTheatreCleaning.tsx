@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import Image from "next/image";
 
-const WwoTheatreCleaning = () => {
+const WwoMovieTheatreCleaning = () => {
   return (
     <div>
       {/* What We Offer Section */}
@@ -13,8 +13,8 @@ const WwoTheatreCleaning = () => {
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
               <div className="relative w-full aspect-[536/656] max-w-[536px] overflow-hidden">
                 <Image
-                  src="/services/theatreCleaning2.jpg"
-                  alt="Professional Theatre Cleaning Services"
+                  src="/services/theatre2.jpg"
+                  alt="Professional Movie Theatre Cleaning Services"
                   fill
                   style={{ objectFit: "cover" }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 536px"
@@ -32,29 +32,35 @@ const WwoTheatreCleaning = () => {
 
               <div className="space-y-4">
                 <p className="text-base md:text-lg text-gray-700">
-                  CQD Cleaning Services specializes in professional theatre cleaning, maintaining immaculate auditoriums, seating areas, and stage environments to provide a clean and welcoming experience for your audience.
+                  CQD Cleaning Services delivers expert movie theatre cleaning
+                  to ensure a fresh, sanitary, and inviting environment for your
+                  guests. Our trained professionals handle high-traffic areas
+                  with precision and care.
                 </p>
 
                 <p className="text-base md:text-lg text-gray-700">
-                  We use industry-approved, eco-friendly cleaning methods to sanitize floors, upholstery, carpets, and lighting fixtures, helping you preserve your theatre’s ambiance while ensuring safety and hygiene.
+                  From seating areas and concession stands to restrooms and
+                  entryways, we use safe, eco-friendly products to remove
+                  spills, stains, and germs, maintaining a spotless viewing
+                  experience.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Auditorium seating and carpet cleaning
+                  Deep cleaning of seats, armrests & cup holders
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Stage and backstage sanitization
+                  Concession area & restroom sanitation
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Eco-friendly surface cleaning solutions
+                  Floor cleaning & stain removal
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Lighting fixture dusting and polishing
+                  Safe, non-toxic cleaning agents
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Lobby and public area sanitation
+                  Odor removal & air quality control
                 </div>
               </div>
 
@@ -82,29 +88,35 @@ const WwoTheatreCleaning = () => {
 
               <div className="space-y-4">
                 <p className="text-base md:text-lg text-gray-700">
-                  Our theatre cleaning specialists are trained to handle delicate interiors with care, using non-toxic and gentle cleaning products to protect your venue’s surfaces and décor.
+                  At CQD Cleaning Services, we understand how important
+                  cleanliness is to your theatre’s reputation. We ensure every
+                  auditorium, lobby, and restroom is consistently spotless and
+                  welcoming.
                 </p>
 
                 <p className="text-base md:text-lg text-gray-700">
-                  CQD Cleaning Services is dedicated to ensuring your theatre remains pristine and inviting, helping you create memorable experiences with minimal disruption to your schedule.
+                  Our services are tailored to your schedule — including
+                  pre-show, post-show, or overnight cleaning — so your
+                  operations remain smooth and your audiences always enjoy a
+                  clean, comfortable visit.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Experienced in theatre and auditorium environments
+                  Trusted by cinemas & entertainment venues
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Use of eco-friendly and safe cleaning products
+                  Experienced cleaners in high-traffic environments
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Flexible scheduling to minimize disruption
+                  Flexible scheduling that fits your showtimes
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Transparent pricing and detailed service reports
+                  Clear pricing with no hidden charges
                 </div>
                 <div className="bg-gray-100 rounded-full py-3 px-6 text-center text-[#14213d] font-medium">
-                  Trusted by theatre owners and event organizers
+                  100% satisfaction guaranteed
                 </div>
               </div>
 
@@ -121,8 +133,8 @@ const WwoTheatreCleaning = () => {
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
               <div className="relative w-full aspect-[536/656] max-w-[536px] rounded-tr-[100px] rounded-bl-[100px] overflow-hidden">
                 <Image
-                  src="/services/theatreCleaning3.jpg"
-                  alt="Theatre Cleaning Experts at Work"
+                  src="/services/theatre3.jpg"
+                  alt="Expert Movie Theatre Cleaning Professionals"
                   fill
                   style={{ objectFit: "cover" }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 536px"
@@ -138,4 +150,4 @@ const WwoTheatreCleaning = () => {
   );
 };
 
-export default WwoTheatreCleaning;
+export default WwoMovieTheatreCleaning;

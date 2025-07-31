@@ -17,7 +17,7 @@ const Page = () => {
       <HeroImage
         title="Professional Soft Play Cleaning"
         description="Keep your soft play areas safe and spotless with our expert cleaning services using child-friendly, eco-safe products tailored for play centers of all sizes."
-        backgroundImage="/services/soft PlayCleaning1.jpg"
+        backgroundImage="/services/softPlayCleaing1.jpg"
         imageAlt="Soft Play Cleaning Services"
       />
 

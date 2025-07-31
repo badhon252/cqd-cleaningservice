@@ -17,7 +17,7 @@ const Page = () => {
       <HeroImage
         title="Professional Nursery Cleaning"
         description="Ensure a safe, clean, and healthy nursery environment with our expert cleaning services tailored specifically for childcare facilities."
-        backgroundImage="/services/nurseryCleaning1.jpg"
+        backgroundImage="/services/nurseryCleaning2.jpg"
         imageAlt="Nursery Cleaning Services"
       />
 
