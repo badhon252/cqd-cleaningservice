@@ -178,9 +178,7 @@ npm start
 
 ## 🏷️ **Categories**
 
-* react
-* next
-* ai
+* Service
 
 ---
 
